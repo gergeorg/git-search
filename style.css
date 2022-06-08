@@ -1,0 +1,122 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: sans-serif;
+	color: black;
+	font-size: 18px;
+	background-color: #27242c;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input,
+textarea {
+	width: 100%;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 40px 15px;
+	max-width: 1320px;
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+.input__search {
+	width: 100%;
+	padding: 20px 60px 20px 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+.input__list {
+	margin-bottom: 40px;
+	max-height: 280px;
+	overflow-y: auto;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.input__item {
+	width: 100%;
+	padding: 8px 12px;
+	border-radius: 3px;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.input__item:hover {
+	background-color: #efefef;
+}
+
+.search-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0.75rem;
+	fill: #000;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px
+}
+
+
+.list__item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border-radius: 15px;
+	background-color: #20c997;
+	transition: box-shadow .3s ease-in-out;
+}
+
+.list__item:hover {
+	box-shadow: 0 0 0 0.25rem rgb(32, 201, 151, 25%);
+}
+
+
+.list__btn {
+	background-image: url(delete.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	font-family: inherit;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
