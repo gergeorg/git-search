@@ -40,6 +40,7 @@ async function searchRepo() {
 
 	let data = await response.json();
 	let reposArr = data.items;
+	inputList.innerHTML = '';
 
 
 	for ( let i = 0; i < 5; i++) {
